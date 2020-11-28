@@ -1,0 +1,112 @@
+.booking {
+    height: 85vh;
+    background-image: linear-gradient(
+        to left bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(../img/man.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+         clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+         height: 95vh;
+    }
+
+    
+    // @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    // (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em) 
+    // (min-width: 125em) {
+    //     background-image: linear-gradient(
+    //     to left bottom,
+    //     rgba($color-primary-light, 0.8),
+    //     rgba($color-primary-dark, 0.8)),
+    // url(../img/CC.png);
+    // }
+
+
+
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    
+    &__logo {
+        height: 9.5rem;
+        
+    }
+    
+    
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+
+.booking-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
+
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 16.5rem 0;
+    margin-top: -20vh;
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
+}
+
+.terms{
+    &__img {
+        display: block;
+        width: 100%;
+
+        @include respond(tab-land) {
+            padding: auto;
+            height: 40.333333vh;
+        }
+
+        @include respond(tab-port) {
+            padding: auto;
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+
+        -moz-column-count: 2;
+        -moz-column-gap: 4rem; //1em = 14px
+        -moz-column-rule: 1px solid $color-grey-light-2;
+
+        column-count: 2;
+        column-gap: 4rem; //1em = 14px
+        column-rule: 1px solid $color-grey-light-2;
+
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+}
