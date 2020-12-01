@@ -1015,12 +1015,12 @@ body {
     .sections-book {
       padding: 10rem 0; } }
 
-.sections {
+.card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem; }
-  .sections__side {
+  .card__side {
     height: 52rem;
     transition: all .8s ease;
     position: absolute;
@@ -1032,27 +1032,27 @@ body {
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-    .sections__side--front {
+    .card__side--front {
       background-color: #fff; }
-    .sections__side--back {
+    .card__side--back {
       transform: rotateY(180deg); }
-      .sections__side--back-1 {
+      .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-      .sections__side--back-2 {
+      .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-      .sections__side--back-3 {
+      .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
-      .sections__side--back-4 {
+      .card__side--back-4 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-      .sections__side--back-5 {
+      .card__side--back-5 {
         background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
-      .sections__side--back-6 {
+      .card__side--back-6 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-  .sections:hover .sections__side--front {
+  .card:hover .card__side--front {
     transform: rotateY(-180deg); }
-  .sections:hover .sections__side--back {
+  .card:hover .card__side--back {
     transform: rotateY(0); }
-  .sections__picture {
+  .card__picture {
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
@@ -1060,19 +1060,19 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
-    .sections__picture--1 {
+    .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/stretchhand.jpeg); }
-    .sections__picture--2 {
+    .card__picture--2 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/mains.jpg); }
-    .sections__picture--3 {
+    .card__picture--3 {
       background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/pexels1.jpg); }
-    .sections__picture--4 {
+    .card__picture--4 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/head.jpeg); }
-    .sections__picture--5 {
+    .card__picture--5 {
       background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/cold.jpg); }
-    .sections__picture--6 {
+    .card__picture--6 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/joy.jpg); }
-  .sections__heading {
+  .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -1082,78 +1082,78 @@ body {
     top: 12rem;
     right: 2rem;
     width: 75%; }
-  .sections__heading-span {
+  .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
-    .sections__heading-span--1 {
+    .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
-    .sections__heading-span--2 {
+    .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
-    .sections__heading-span--3 {
+    .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
-    .sections__heading-span--4 {
+    .card__heading-span--4 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
-    .sections__heading-span--5 {
+    .card__heading-span--5 {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
-    .sections__heading-span--6 {
+    .card__heading-span--6 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
-  .sections__details {
+  .card__details {
     padding: 3rem; }
-    .sections__details ul {
+    .card__details ul {
       list-style: none;
       width: 80%;
       margin: 0 auto; }
-      .sections__details ul li {
+      .card__details ul li {
         text-align: center;
         font-size: 1.5rem;
         padding: 1rem; }
-        .sections__details ul li:not(:last-child) {
+        .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
-  .sections__cta {
+  .card__cta {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 90%; }
-  .sections__price-box {
+  .card__price-box {
     text-align: center;
     color: #fff;
     margin-bottom: 8rem; }
-  .sections__price-only {
+  .card__price-only {
     font-size: 1.4rem;
     text-transform: uppercase; }
-  .sections__price-value {
+  .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
   @media (max-width: 56.25em) {
-    .sections {
+    .card {
       height: auto;
       border-radius: 3px;
       background-color: #fff;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-      .sections__side {
+      .card__side {
         height: auto;
         position: relative;
         box-shadow: none; }
-        .sections__side--back {
+        .card__side--back {
           transform: rotateY(0);
           clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
-      .sections:hover .sections__side--front {
+      .card:hover .card__side--front {
         transform: rotateY(0); }
-      .sections__details {
+      .card__details {
         padding: 1rem 3rem; }
-      .sections__cta {
+      .card__cta {
         position: relative;
         top: 0%;
         left: 0;
         transform: translate(0);
         width: 100%;
         padding: 7rem 4rem 4rem 4rem; }
-      .sections__price-box {
+      .card__price-box {
         margin-bottom: 3rem; }
-      .sections__price-value {
+      .card__price-value {
         font-size: 4rem; } }
 
 .sections {
